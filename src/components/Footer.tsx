@@ -1,18 +1,28 @@
 import React from "react";
 import { motion } from "framer-motion";
+
+// 🔥 BRAND ICONS (redes sociais)
 import { 
-  Instagram, 
-  Facebook, 
-  Youtube, 
-  Send, 
-  Twitter, 
-  MessageSquare, 
-  Smartphone,
+  FaInstagram, 
+  FaTiktok, 
+  FaFacebookF, 
+  FaYoutube, 
+  FaTelegramPlane, 
+  FaWhatsapp, 
+  FaTwitter, 
+  FaDiscord 
+} from "react-icons/fa";
+
+// 🔧 SYSTEM ICONS (mantém estes)
+import { 
   MapPin,
   Mail,
   ShieldCheck,
-  Globe
+  Globe,
+  MessageSquare,
+  Send
 } from "lucide-react";
+
 
 /**
  * Nota: Removidas as dependências 'next/link' e 'react-icons' para compatibilidade.
@@ -103,17 +113,17 @@ export default function Footer() {
              <div>
                <p className="text-[10px] text-gray-600 uppercase mb-3 tracking-tighter">Oficial eDollar</p>
                <div className="flex gap-4">
-                  <a href="https://t.me/eDollar2025" className="text-blue-400 hover:scale-110 transition p-2 bg-white/5 rounded-lg border border-white/10"><Send size={18} /></a>
-                  <a href="https://x.com/CoinE28810" className="text-white hover:scale-110 transition p-2 bg-white/5 rounded-lg border border-white/10"><Twitter size={18} /></a>
+                  <a href="https://t.me/eDollar2025" className="text-blue-400 hover:scale-110 transition p-2 bg-white/5 rounded-lg border border-white/10"><FaTelegramPlane size={18} /></a>
+                  <a href="https://x.com/CoinE28810" className="text-white hover:scale-110 transition p-2 bg-white/5 rounded-lg border border-white/10"><FaTwitter size={18} /></a>
                   <a href="https://t.me/+tZf9BhknTPs3Nzg0" className="text-indigo-500 hover:scale-110 transition p-2 bg-white/5 rounded-lg border border-white/10"><MessageSquare size={18} /></a>
-                  <a href="#" className="text-green-500 hover:scale-110 transition p-2 bg-white/5 rounded-lg border border-white/10"><Smartphone size={18} /></a>
+                  <a href="#" className="text-green-500 hover:scale-110 transition p-2 bg-white/5 rounded-lg border border-white/10"><FaWhatsapp size={18} /></a>
                </div>
              </div>
              <div>
                <p className="text-[10px] text-gray-600 uppercase mb-3 tracking-tighter">CEO Athelstan Atanas</p>
                <div className="flex gap-4 text-gray-400">
-                  <a href="https://instagram.com/athelstanatanas" className="hover:text-pink-500 transition"><Instagram size={18} /></a>
-                  <a href="#" className="hover:text-blue-500 transition"><Facebook size={18} /></a>
+                  <a href="https://instagram.com/athelstanatanas" className="hover:text-pink-500 transition"><FaInstagram size={18} /></a>
+                  <a href="#" className="hover:text-blue-500 transition"><FaFacebookF size={18} /></a>
                   <a href="#" className="hover:text-white transition">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                       <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.06 3.43-.3 6.83-1.02 10.18-1.04 4.81-5.18 8.04-10.1 7.84-5.45-.22-9.61-4.82-9.61-10.27.02-5.44 4.16-10.04 9.61-10.27.02 1.34.01 2.68.02 4.02-3.41.23-5.96 3.11-5.96 6.25 0 3.13 2.55 6.01 5.96 6.25 1.45.1 2.87-.2 4.02-1.02.73-3.05.73-6.22.73-9.36 0-4.33 0-8.66.01-12.99Z"/>

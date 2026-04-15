@@ -149,7 +149,7 @@ const StabilityMechanism = () => {
 
             <div className="pt-4 border-t border-white/10">
               <div className="flex items-start gap-3 bg-blue-500/10 p-4 rounded-2xl border border-blue-500/20">
-                <RefreshCcw className="text-blue-400 shrink-0 animate-spin-slow" size={16} />
+                <RefreshCcw className="text-blue-400 shrink-0 animate-spin" size={16} />
                 <p className="text-[10px] text-blue-200 leading-normal uppercase tracking-wider font-mono">
                   A estabilidade é mantida através de arbitragem institucional e vaults de tesouraria que compram/vendem no mercado aberto para manter o Pinos do Preço.
                 </p>

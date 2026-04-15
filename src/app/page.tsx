@@ -4,10 +4,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
-import ExecutivePitchCarousel from "../components/ExecutivePitchCarousel";
-import DashboardCard from "../components/DashboardCard";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import DashboardCard from "@/components/DashboardCard";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import ExecutivePitchCarousel from "@/components/ExecutivePitchCarousel";
 
 
 
