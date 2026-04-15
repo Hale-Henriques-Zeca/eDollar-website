@@ -14,8 +14,8 @@ import {
   Menu,
   X
 } from 'lucide-react';
-import StabilityMechanism from './StabilityMechanism';
-import StabilityEnginePanel from "./StabilityEnginePanel";
+import StabilityEnginePanel from "@/app/edollar-dashboard/StabilityEnginePanel";
+import StabilityMechanism from "@/app/edollar-dashboard/StabilityMechanism";
 
 /**
  * EdenKingDom USD (E-USD) Dashboard

@@ -44,7 +44,7 @@ const DashboardCard = () => {
             {/* LOGO */}
             <motion.div
               whileHover={{ rotate: 10, scale: 1.05 }}
-              className="relative w-75 h-75 rounded-full overflow-hidden border-2 border-white/30 shadow-md"
+              className="relative w-[250px] h-[250px] rounded-full overflow-hidden border-2 border-white/30 shadow-md"
             >
               <img
                 src="/eusd.jpg"
@@ -66,7 +66,7 @@ const DashboardCard = () => {
 
           {/* 🟣 BOTÃO */}
           <motion.a
-            href="/eDollarDashboard"
+            href="/edollar-dashboard"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="
