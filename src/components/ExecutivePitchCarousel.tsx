@@ -18,28 +18,28 @@ export default function App() {
       title: "Visão Institucional",
       desc: "A primeira stablecoin BEP-20 com supply fixo de 1 quatrilhão para liquidações globais.",
       tag: "ESTRATÉGIA",
-      img: "https://ecoin.edenkingdom.org/logo.jpg" // Substitua pelo link das suas imagens locais se necessário
+      img: "/images/pitch/slide1.jpg"
     },
     {
       id: 2,
       title: "Imutabilidade Total",
       desc: "Sem owner, sem funções de mint/burn. O contrato é selado para máxima segurança.",
       tag: "TECNOLOGIA",
-      img: "https://ecoin.edenkingdom.org/logo.jpg"
+      img: "/images/pitch/slide2.jpg"
     },
     {
       id: 3,
       title: "Paridade 2026",
       desc: "Data de paridade oficial definida para 15 de Abril de 2026. Roadmap concluído.",
       tag: "ROADMAP",
-      img: "https://ecoin.edenkingdom.org/logo.jpg"
+      img: "/images/pitch/slide3.jpg"
     },
     {
       id: 4,
       title: "Savings & Rewards",
       desc: "Ganhe recompensas em USDT e eDollar através do nosso sistema de staking exclusivo.",
       tag: "ECOSSISTEMA",
-      img: "https://ecoin.edenkingdom.org/logo.jpg"
+      img: "/images/pitch/slide4.jpg"
     }
   ];
 

@@ -1,15 +1,25 @@
 "use client";
 
 import Image from 'next/image';
+import { motion } from "framer-motion";
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
+import {
+  FaTelegramPlane,
+  FaTelegram,
+  FaWhatsapp,
+  FaTwitter,
+  FaDiscord,
+} from "react-icons/fa";
+import { BsStars } from "react-icons/bs";
 import DashboardCard from "@/components/DashboardCard";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ExecutivePitchCarousel from "@/components/ExecutivePitchCarousel";
 import LaunchPadCard from "@/components/LaunchPadCard";
 import FlexibleLiquidityCard from "@/components/FlexibleLiquidityCard";
+
 
 
 
@@ -103,11 +113,45 @@ const [currentPage, setCurrentPage] = useState('home');
         <div className="relative group overflow-hidden bg-gradient-to-br from-blue-900/60 to-pink-900/60 border border-pink-500/30 p-12 rounded-[3rem] text-center shadow-2xl">
             <div className="absolute -top-24 -right-24 w-64 h-64 bg-pink-500/10 blur-[100px] rounded-full group-hover:bg-pink-500/20 transition"></div>
             <h3 className="text-3xl font-black mb-4 tracking-tight">MINERAÇÃO & AIRDROP</h3>
-            <p className="text-blue-100 text-lg mb-8 max-w-xl mx-auto">Ganhe recompensas em <span className="text-green-400 font-bold">USDT</span> e <span className="text-pink-400 font-bold">eDollar</span> fazendo stake de <span className="text-yellow-400 font-bold">E-Coin</span> no nosso sistema exclusivo de Savings no <span className="text-pink-400 font-bold">ecossistema E-Coin</span>.</p>
+            <p className="text-blue-100 text-lg mb-8 max-w-xl mx-auto">Ganhe recompensas em <span className="text-green-400 font-bold">USDT</span> e <span className="text-pink-400 font-bold">eDollar</span> fazendo stake de <span className="text-yellow-400 font-bold">eCoin</span> no nosso sistema exclusivo de Poupança no <span className="text-pink-400 font-bold">ecossistema eCoin</span>.</p>
             <a href="https://ecoin.edenkingdom.org/Savings" target="_blank" className="inline-block bg-white text-black px-12 py-4 rounded-2xl font-black hover:scale-110 hover:-rotate-1 transition shadow-xl shadow-white/10">
-              ACESSAR SAVINGS AGORA
+              ACESSAR POUPANÇA AGORA
             </a>
+            {/* 🌐 FOOTER */}
+<motion.div
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 1, delay: 0.4 }}
+ className="mt-12 flex flex-col items-center gap-3 text-[#D4AF37]"
+>
+  <p className="text-sm mb-3 text-gray-400">
+     Conecte-se à comunidade E-Coin
+  </p>
+
+  <div className="flex justify-center gap-5 text-2xl">
+            <a href="https://t.me/ecoin2026" target="_blank" rel="noopener noreferrer">
+              <FaTelegramPlane />
+            </a>
+            <a href="https://x.com/CoinE28810" target="_blank" rel="noopener noreferrer">
+              <FaTwitter />
+            </a>
+            <a href="https://discord.com" target="_blank" rel="noopener noreferrer">
+              <FaDiscord />
+            </a>
+            <a href="https://t.me/ecoin2025" target="_blank" rel="noopener noreferrer">
+              <FaTelegram />
+            </a>
+            <a href="https://chat.whatsapp.com/G1F6USX5NrrLKikm7yiXXQ" target="_blank" rel="noopener noreferrer">
+              <FaWhatsapp />
+            </a>
+          </div>
+
+  <BsStars className="text-3xl mt-5 animate-pulse text-[#D4AF37]" />
+</motion.div>
         </div>
+
+         
+
       </section>
 
  
