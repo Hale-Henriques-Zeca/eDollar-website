@@ -8,7 +8,8 @@ import DashboardCard from "@/components/DashboardCard";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ExecutivePitchCarousel from "@/components/ExecutivePitchCarousel";
-
+import LaunchPadCard from "@/components/LaunchPadCard";
+import FlexibleLiquidityCard from "@/components/FlexibleLiquidityCard";
 
 
 
@@ -93,6 +94,7 @@ const [currentPage, setCurrentPage] = useState('home');
           </Link>
         </div>
       </section>
+       <LaunchPadCard />
 
       <DashboardCard />
 
@@ -144,7 +146,7 @@ const [currentPage, setCurrentPage] = useState('home');
         </div>
       </section>
 
-      
+     <FlexibleLiquidityCard />
 
       {/* CONTRACT INFO */}
       <section className="py-20 px-6">

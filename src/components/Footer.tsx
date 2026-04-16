@@ -116,7 +116,7 @@ export default function Footer() {
                   <a href="https://t.me/eDollar2025" className="text-blue-400 hover:scale-110 transition p-2 bg-white/5 rounded-lg border border-white/10"><FaTelegramPlane size={18} /></a>
                   <a href="https://x.com/CoinE28810" className="text-white hover:scale-110 transition p-2 bg-white/5 rounded-lg border border-white/10"><FaTwitter size={18} /></a>
                   <a href="https://t.me/+tZf9BhknTPs3Nzg0" className="text-indigo-500 hover:scale-110 transition p-2 bg-white/5 rounded-lg border border-white/10"><MessageSquare size={18} /></a>
-                  <a href="#" className="text-green-500 hover:scale-110 transition p-2 bg-white/5 rounded-lg border border-white/10"><FaWhatsapp size={18} /></a>
+                  <a href="https://chat.whatsapp.com/Ge733s4ekK7IQrOWluwZlq" className="text-green-500 hover:scale-110 transition p-2 bg-white/5 rounded-lg border border-white/10"><FaWhatsapp size={18} /></a>
                </div>
              </div>
              <div>

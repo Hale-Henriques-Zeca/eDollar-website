@@ -2,6 +2,14 @@
 
 import { useEffect, useState } from "react";
 import {
+  Rocket,
+  PieChart,
+  Map,
+  BarChart3,
+   Coins,
+} from "lucide-react";
+
+import {
   Home,
   Download,
   ArrowLeftRight,
@@ -22,8 +30,13 @@ import {
 } from "lucide-react";
 
 const navLinks = [
+  
   { name: "Home", href: "/", icon: Home },
-  { name: "E-Coin", href: "https://ecoin.edenkingdom.org", external: true, icon: Sprout },
+  { name: "eCoin", href: "https://ecoin.edenkingdom.org", external: true, icon:  Coins },
+  { name: "LaunchPad", href: "/LaunchPad", icon: Rocket },
+  { name: "Tokenomics", href: "#tokenomics", icon: PieChart },
+  { name: "Roadmap", href: "#roadmap", icon: Map },
+  { name: "Transparência", href: "#stats", icon: BarChart3 },
   { name: "Importar", href: "https://ecoin.edenkingdom.org/import-guide", icon: Download },
   { name: "MozP2P", href: "https://efte.edenkingdom.org/p2p", icon: Repeat2 },
   { name: "Poupança", href: "https://ecoin.edenkingdom.org/Savings", icon: PiggyBank },
@@ -126,7 +139,7 @@ export default function Header() {
 
             {/* 📱 MOBILE */}
             <button
-              className="lg:hidden w-10 h-10 flex items-center justify-center border border-white/10 rounded-xl"
+              className="lg:hidden bg-[#001220]/95 backdrop-blur-xl border-t border-white/10 p-4 space-y-2 max-h-[80vh] overflow-y-auto"
               onClick={() => setOpen(!open)}
             >
               {open ? <X size={18} /> : <Menu size={18} />}
